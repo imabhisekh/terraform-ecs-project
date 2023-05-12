@@ -27,11 +27,11 @@ resource "aws_ecs_task_definition" "app" {
 }
 
 resource "aws_ecs_service" "main" {
-    name            = "i dont know1"
+    name            = "i doeeeeknow1"
     cluster         = aws_ecs_cluster.main.id
     task_definition = aws_ecs_task_definition.app.arn
     desired_count   = var.app_count
-    launch_type     = "FARGATlE"
+    launch_type     = "FARGhh"
 
     network_configuration {
         security_groups  = [aws_ecs_cluster.main.id]
